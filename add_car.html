@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Car</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Car</h2>
+        <form action="add_car.php" method="post" enctype="multipart/form-data">
+            <label for="model">Model:</label>
+            <input type="text" name="model" required><br>
+            <label for="number">Number:</label>
+            <input type="text" name="number" required><br>
+            <label for="capacity">Seating Capacity:</label>
+            <input type="number" name="capacity" required><br>
+            <label for="rent">Rent per Day:</label>
+            <input type="number" name="rent" required><br>
+            <label for="image">Car Image:</label>
+            <input type="file" name="image" accept="image/*" required><br>
+            <input type="submit" value="Add Car">
+        </form>
+    </div>
+</body>
+</html>

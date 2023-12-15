@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required><br>
+            <!-- Add the 'user_type' input field here -->
+            <label for="user_type">Login as:</label>
+            <select name="user_type" required>
+                <option value="customer">Customer</option>
+                <option value="agency">Car Rental Agency</option>
+            </select><br>
+            <input type="submit" value="Login">
+        </form>
+        <p>Not a user? <a href="registartion.html">Register here</a>.</p>
+    </div>
+</body>
+</html>
