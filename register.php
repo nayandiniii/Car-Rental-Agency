@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             // Redirect to the login page after successful registration
-            header("Location: login.html");
+            header("Location: index.html");
             exit();
         } else {
             echo "Error: " . $stmt->error;
